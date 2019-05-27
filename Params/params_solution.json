@@ -1,0 +1,55 @@
+{
+    "Editing":
+    {
+        "src":"C", 
+        "tgt":"T"
+    },
+    "General":
+    {
+		"transl_table":"Standard",
+		"subst_mat":"blosum62", 
+		"dist_mat":"mat_grantham.txt"
+    },
+    "Initialisation":
+    {
+        "Species":
+        {
+			"Method": "random_node",
+            "__comment": "random+proba, heuristics+heur_used, none, all, list+values, random_node"
+        },
+        "Columns":
+        {
+			"Method": "random",
+			"Probability": 0.2,
+            "__comment": "random+proba, heuristics+heur_used+proba, none, all, list+values"
+        },
+        "Filter_editable_columns":
+        {
+			"Method": "singleCT",
+            "__comment": "thresholdCT+Value, singleCT"
+        }
+    },
+    "Score":
+    {
+		"AA_Sankoff":
+		{
+			"g_file":"mat_grantham.txt", 
+			"init_value":1
+		}
+    },
+    "Move":
+    {
+        "Columns":
+        {
+            "Method":"random",
+            "number":1,
+            "__comment":"heuristics+heur_used+number, order+number, random+number"
+        }, 
+        "Species":
+        {
+			"Method":"random_node",
+			"number":1,
+            "__comment":"random_node+number"
+        }
+    }
+}

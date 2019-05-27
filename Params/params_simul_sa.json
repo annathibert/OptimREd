@@ -1,0 +1,5 @@
+{
+    "itermax":1500,
+	"tmp":0.2, 
+	"hill_climbing":0
+}
